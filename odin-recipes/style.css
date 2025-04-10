@@ -1,28 +1,53 @@
 /* Style Recipe page */
 
 *{
-    background-color: lightskyblue;
+    background-color: rgb(161, 227, 249)
+    ;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: serif, sans-serif , "Times New Roman";
 }
 
-ul{
-        list-style-type: none;
+
+a {
+    text-decoration: none;
+    color: black;
+    
+}
+a:hover {
+    background-color: rgb(209, 248, 239);
 }
  
+ul{
+    background-color: rgb(87, 143, 202);
+    border-radius: 30px;
+    display: block;
+    margin: 20px;
+    padding: 20px;
+    list-style-type: none;
+}
       
-li{
-    
-    padding: 2px;
-    margin: 2px 20px 40px 50px;
-    text-align: center;
+.homeli{
+    display: block;
+    outline: 2px solid black;
+    margin: 20px 70px 20px 70px;
+    border-radius: 10px;
+    font-weight: bold;
     cursor: pointer;
-    color: black;
+    text-align: center;
 }
 
-li:hover{
-    background-color: green;
-    color: black;
+.homeli:hover{
+    background-color: rgb(209, 248, 239);
 
+}
+
+.titleh1,
+.titleh2{
+    text-align: center;
+}
+
+.hp{
+    text-align: justify;
 }
