@@ -1,46 +1,39 @@
 /* Style Recipe page */
 
 *{
-    background-color: rgb(161, 227, 249)
-    ;
-    padding: 0;
-    margin: 0;
+    background-color: rgb(161, 227, 249);
     box-sizing: border-box;
+    padding: 20px;
+    margin: 0;
     font-family: serif, sans-serif , "Times New Roman";
 }
 
 
-a {
+
+.ali {
     text-decoration: none;
-    color: black;
+    color: black; 
     
 }
-a:hover {
-    background-color: rgb(209, 248, 239);
+.ali:hover, .homeli:hover .ali.homeli:active {
+    
+    font-size: 190%;
 }
  
-ul{
-    background-color: rgb(87, 143, 202);
+.homeul{
+    background: linear-gradient(90deg,rgba(0, 128, 0, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 0, 0, 1) 100%);
     border-radius: 30px;
-    display: block;
-    margin: 20px;
-    padding: 20px;
-    list-style-type: none;
+    list-style-type: none; 
+
 }
       
 .homeli{
-    display: block;
     outline: 2px solid black;
     margin: 20px 70px 20px 70px;
     border-radius: 10px;
     font-weight: bold;
     cursor: pointer;
     text-align: center;
-}
-
-.homeli:hover{
-    background-color: rgb(209, 248, 239);
-
 }
 
 .titleh1,
@@ -51,3 +44,53 @@ ul{
 .hp{
     text-align: justify;
 }
+
+/* Carbonara Page Css Style */
+
+.homepagebtn{
+    border: 2px solid #04AA6D;
+    background: linear-gradient(90deg,rgba(0, 128, 0, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 0, 0, 1) 100%);
+    border-radius: 20px;
+    font-size: 20px;
+    color:black;
+    font-weight: bold;
+}
+
+img{
+    background: linear-gradient(to right, red, white , green );
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+}
+
+.title-2{
+    text-align: center;
+    border-radius: 30px;
+}
+
+.title-1{
+    text-align: center;
+}
+
+.carb-ul, .carb-oll{
+    background: linear-gradient(90deg,rgba(0, 128, 0, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 0, 0, 1) 100%);
+    border-radius: 30px;
+    list-style-type: none;
+
+}
+.carb-li , .carb-ol{
+    outline: 2px solid black;
+    display: block;
+    border-radius: 10px;
+    margin: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.carb-li:hover, .carb-li:active , .carb-ol:hover, .carb-ol:active{
+    
+    font-size: 190%;
+}
+
