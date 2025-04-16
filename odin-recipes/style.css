@@ -73,7 +73,7 @@ a{
 .homepagebtn{
     border: 2px solid #04AA6D;
     background: linear-gradient(90deg,rgba(0, 128, 0, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 0, 0, 1) 100%);
-    border-radius: 20px;
+    border-radius: 10px;
     font-size: 20px;
     color:black;
     font-weight: bold;
@@ -122,5 +122,49 @@ img{
     font-size: 190%;
 }
 
+/* Responsive Design */
+
+/* @media (max-width: 1024px) {
+    
+
+} */
+
+@media (max-width: 600px) {
+    
+    .titleh1, .title-1{
+        font-size: 1.4rem;
+
+    }
+    .titleh2, .title-2{
+        font-size: 1.2rem;
+        text-align: center;
+        display: flex;
+    }
+
+    .ali, .carb-li, .carb-oll, .carb-ul{
+        font-size: 1.1rem; 
+        text-align: center;
+    }
+    .homeul, .homeli{
+        display: grid; 
+    }
+    img{
+        height: auto;
+        width: 360px;
+    }
+    a.homepagebtn {
+        display: inline-block;
+        width: 150px;
+        height: 30px;
+        font-size: 2vh;
+        text-align: justify;
+        padding-bottom: 40px;
+    
+    }
+    
+
+     
+
+}
 
 
