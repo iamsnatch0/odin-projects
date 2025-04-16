@@ -141,11 +141,12 @@ img{
         display: flex;
     }
 
-    .ali, .carb-li, .carb-oll, .carb-ul{
-        font-size: 1.1rem; 
+    .ali, .carb-li, .carb-oll, .carb-ul, .carb-li{
+        font-size: 1rem; 
         text-align: center;
     }
-    .homeul, .homeli{
+     
+    .homeul, .homeli, strong{
         display: grid; 
     }
     img{
