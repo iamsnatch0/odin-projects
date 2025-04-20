@@ -9,32 +9,24 @@
 .header{
     background-color: #1F2937;
     padding: 20px 120px 50px 120px;
-    display: flex;
+    /* display: flex; */
 }
 .container-items{
-    display: flex; 
+    
 }
 ul{
-    list-style-type: none;
-    flex: 1;
+    list-style-type: none; 
+    
 }
 ul.nav-right{
-    display: flex;
-    justify-content: space-around;
+   
 }
 
 .sign-up-section{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 50px 0;
-    width: 500px;
-    position: relative;
-    gap: 20px;
+   
     
 }
 .btn{
-    position: absolute;
-    bottom: -40px;
     background-color:#3882F6;
     font-weight: bold;
     color: #E5E7EB;
@@ -43,13 +35,13 @@ ul.nav-right{
 }
 
 div.imgsection{
-    display: flex;
-    justify-content: flex-end;
+    
 }
 
 .img-head{
-    width: 50%;  
+    width:   50%;
 }
+
 
 
 nav{
