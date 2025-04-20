@@ -2,12 +2,14 @@
     font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
      
 }
 
 .header{
     background-color: #1F2937;
-    padding: 20px 120px 50px 120px
+    padding: 20px 120px 50px 120px;
+    display: flex;
 }
 .container-items{
     display: flex; 
@@ -18,9 +20,37 @@ ul{
 }
 ul.nav-right{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.sign-up-section{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0;
+    width: 500px;
+    position: relative;
+    gap: 20px;
     
 }
+.btn{
+    position: absolute;
+    bottom: -40px;
+    background-color:#3882F6;
+    font-weight: bold;
+    color: #E5E7EB;
+    border-radius: 15%;
+    padding: 5px 20px;
+}
+
+div.imgsection{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.img-head{
+    width: 50%;  
+}
+
 
 nav{
     border-bottom: 1px solid red;
@@ -49,7 +79,3 @@ nav{
     color: #E5E7EB;
 }
 
-img{
-    width: 100px;
-    height: 100px;
-}
