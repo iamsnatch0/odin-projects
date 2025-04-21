@@ -1,31 +1,21 @@
 *{
     font-family: 'Roboto', sans-serif;
     padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-     
+    margin: 0; 
 }
 
 .header{
     background-color: #1F2937;
     padding: 20px 120px 50px 120px;
-    /* display: flex; */
-}
-.container-items{
-    
-}
-ul{
-    list-style-type: none; 
-    
-}
-ul.nav-right{
-   
+    /* display: flex;  */
 }
 
-.sign-up-section{
-   
-    
+ul{
+    list-style-type: none;    
 }
+
+
+
 .btn{
     background-color:#3882F6;
     font-weight: bold;
@@ -34,9 +24,7 @@ ul.nav-right{
     padding: 5px 20px;
 }
 
-div.imgsection{
-    
-}
+
 
 .img-head{
     width:   50%;
