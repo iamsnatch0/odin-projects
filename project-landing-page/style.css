@@ -50,9 +50,7 @@ ul{
     height:  80%;
     
 }
-nav{
-    border-bottom: 1px solid red;
-}
+
 .sign-up-section h1{
     font-size: 48px;
     color: #F9FAF8;
@@ -79,7 +77,7 @@ nav{
 
 .info-container{
     display: flex;
-    margin: 20px 40px 40px 40px;
+    margin: 20px 40px 90px 40px;
     padding: 0 150px 0 150px;
     
 }
@@ -103,4 +101,68 @@ nav{
 h2{
     text-align: center;
     margin-top: 40px;
+}
+
+.quote-section{
+    background-color: #E5E7EB;
+    margin-top: 50px;
+    
+}
+
+.quote-section p {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    padding: 50px;
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+   
+}
+span{
+   display: flex;
+   align-items: flex-end;
+   font-weight: bold;
+}
+
+.Call-to-action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.call-items{
+    background-color: #3882F6;
+    font-size: bold;
+    color: #E5E7EB;
+    border-radius: 2%;
+    padding: 25px 100px 25px 100px;
+    margin: 30px;
+    
+}
+
+.btn1{
+    flex: 1;
+    background-color:#3882F6;
+    font-weight: bold;
+    color: #E5E7EB;
+    border-radius: 5%;
+    margin-left: 100px;
+    padding: 5px 20px;
+    border: 2px solid #E5E7EB;
+
+}
+
+footer{
+    background-color: #1F2937;
+    padding: 20px 120px 20px 120px;
+    color: #E5E7EB;
+    text-align: center;
+    
+}
+a{
+    text-decoration: none;
+    color: #E5E7EB;
+
 }
