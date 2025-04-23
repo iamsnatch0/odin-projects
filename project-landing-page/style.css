@@ -113,7 +113,7 @@ h2{
     display: flex;
     justify-content: center;
     text-align: justify;
-    padding: 50px;
+    padding: 100px 200px 100px 200px;
     font-size: 36px;
     font-style: italic;
     color: #1F2937;
@@ -121,6 +121,7 @@ h2{
 }
 span{
    display: flex;
+   margin-top: 200px;
    align-items: flex-end;
    font-weight: bold;
 }
