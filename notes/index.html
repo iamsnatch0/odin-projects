@@ -142,6 +142,86 @@
         // Joining strings together like this is called concatenation.
 
 
+        // Concatenation in context
+        // concatenation being used in action:
+
+        // html
+       
+        
+        // <button>Press me</button>
+        // <div id="greeting"></div>
+
+        // js
+       
+        
+        // const button = document.querySelector("button");
+
+        // function greet() {
+        // const name = prompt("What is your name?");
+        // const greeting = document.querySelector("#greeting");
+        // greeting.textContent = `Hello ${name}, nice to see you!`;
+        // }
+
+        // button.addEventListener("click", greet);
+
+        // Concatenation using "+"
+        // You can use ${} only with template literals, not normal strings. You can concatenate normal strings using the + operator:
+
+        // const greeting = "Hello";
+        // const name = "Chris";
+        // console.log(greeting + ", " + name); // "Hello, Chris"
+
+        // However, template literals usually give you more readable code:
+
+        // const greeting = "Hello";
+        // const name = "Chris";
+        // console.log(`${greeting}, ${name}`); // "Hello, Chris"
+
+
+        // Including expressions in strings
+        // You can include JavaScript expressions in template literals, as well as just variables, and the results will be included in the result:
+
+    
+        // const song = "Fight the Youth";
+        // const score = 9;
+        // const highestScore = 10;
+        // const output = `I like the song ${song}. I gave it a score of ${
+        // (score / highestScore) * 100
+        // }%.`;
+        // console.log(output); // "I like the song Fight the Youth. I gave it a score of 90%."
+
+        // Multiline strings
+        // Template literals respect the line breaks in the source code, so you can write strings that span multiple lines like this:
+
+        // js
+        // const newline = `One day you finally knew
+        // what you had to do, and began,`;
+        // console.log(newline);
+
+        // /*
+        // One day you finally knew
+        // what you had to do, and began,
+        // */
+        // To have the equivalent output using a normal string you'd have to include line break characters (\n) in the string:
+        
+
+        // const newline = "One day you finally knew\nwhat you had to do, and began,";
+        // console.log(newline);
+
+        // /*
+        // One day you finally knew
+        // what you had to do, and began,
+        // */
+        /**
+         * 
+         * 
+         * 
+
+
+
+
+
+
 
 
 
