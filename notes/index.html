@@ -123,122 +123,122 @@
 
         // You must use the same character for the start and end of a string, or you will get an error:
         // js
-        // const badQuotes = 'This is not allowed!";
+//         // const badQuotes = 'This is not allowed!";
 
 
-        // Embedding JavaScript
-        // Inside a template literal, you can wrap JavaScript variables or expressions inside ${ }, and the result will be included in the string:
-        // js
-        // const name = "Chris";
-        // const greeting = `Hello, ${name}`;
-        // console.log(greeting); // "Hello, Chris"
+//         // Embedding JavaScript
+//         // Inside a template literal, you can wrap JavaScript variables or expressions inside ${ }, and the result will be included in the string:
+//         // js
+//         // const name = "Chris";
+//         // const greeting = `Hello, ${name}`;
+//         // console.log(greeting); // "Hello, Chris"
 
-        // You can use the same technique to join together two variables:
-        // js
-        // const one = "Hello, ";
-        // const two = "how are you?";
-        // const joined = `${one}${two}`;
-        // console.log(joined); // "Hello, how are you?"
-        // Joining strings together like this is called concatenation.
+//         // You can use the same technique to join together two variables:
+//         // js
+//         // const one = "Hello, ";
+//         // const two = "how are you?";
+//         // const joined = `${one}${two}`;
+//         // console.log(joined); // "Hello, how are you?"
+//         // Joining strings together like this is called concatenation.
 
 
-        // Concatenation in context
-        // concatenation being used in action:
+//         // Concatenation in context
+//         // concatenation being used in action:
 
-        // html
+//         // html
        
         
-        // <button>Press me</button>
-        // <div id="greeting"></div>
+//         // <button>Press me</button>
+//         // <div id="greeting"></div>
 
-        // js
+//         // js
        
         
-        // const button = document.querySelector("button");
+//         // const button = document.querySelector("button");
 
-        // function greet() {
-        // const name = prompt("What is your name?");
-        // const greeting = document.querySelector("#greeting");
-        // greeting.textContent = `Hello ${name}, nice to see you!`;
-        // }
+//         // function greet() {
+//         // const name = prompt("What is your name?");
+//         // const greeting = document.querySelector("#greeting");
+//         // greeting.textContent = `Hello ${name}, nice to see you!`;
+//         // }
 
-        // button.addEventListener("click", greet);
+//         // button.addEventListener("click", greet);
 
-        // Concatenation using "+"
-        // You can use ${} only with template literals, not normal strings. You can concatenate normal strings using the + operator:
+//         // Concatenation using "+"
+//         // You can use ${} only with template literals, not normal strings. You can concatenate normal strings using the + operator:
 
-        // const greeting = "Hello";
-        // const name = "Chris";
-        // console.log(greeting + ", " + name); // "Hello, Chris"
+//         // const greeting = "Hello";
+//         // const name = "Chris";
+//         // console.log(greeting + ", " + name); // "Hello, Chris"
 
-        // However, template literals usually give you more readable code:
+//         // However, template literals usually give you more readable code:
 
-        // const greeting = "Hello";
-        // const name = "Chris";
-        // console.log(`${greeting}, ${name}`); // "Hello, Chris"
+//         // const greeting = "Hello";
+//         // const name = "Chris";
+//         // console.log(`${greeting}, ${name}`); // "Hello, Chris"
 
 
-        // Including expressions in strings
-        // You can include JavaScript expressions in template literals, as well as just variables, and the results will be included in the result:
+//         // Including expressions in strings
+//         // You can include JavaScript expressions in template literals, as well as just variables, and the results will be included in the result:
 
     
-        // const song = "Fight the Youth";
-        // const score = 9;
-        // const highestScore = 10;
-        // const output = `I like the song ${song}. I gave it a score of ${
-        // (score / highestScore) * 100
-        // }%.`;
-        // console.log(output); // "I like the song Fight the Youth. I gave it a score of 90%."
+//         // const song = "Fight the Youth";
+//         // const score = 9;
+//         // const highestScore = 10;
+//         // const output = `I like the song ${song}. I gave it a score of ${
+//         // (score / highestScore) * 100
+//         // }%.`;
+//         // console.log(output); // "I like the song Fight the Youth. I gave it a score of 90%."
 
-        // Multiline strings
-        // Template literals respect the line breaks in the source code, so you can write strings that span multiple lines like this:
+//         // Multiline strings
+//         // Template literals respect the line breaks in the source code, so you can write strings that span multiple lines like this:
 
-        // js
-        // const newline = `One day you finally knew
-        // what you had to do, and began,`;
-        // console.log(newline);
+//         // js
+//         // const newline = `One day you finally knew
+//         // what you had to do, and began,`;
+//         // console.log(newline);
 
-        // /*
-        // One day you finally knew
-        // what you had to do, and began,
-        // */
-        // To have the equivalent output using a normal string you'd have to include line break characters (\n) in the string:
+//         // /*
+//         // One day you finally knew
+//         // what you had to do, and began,
+//         // */
+//         // To have the equivalent output using a normal string you'd have to include line break characters (\n) in the string:
         
 
-        // const newline = "One day you finally knew\nwhat you had to do, and began,";
-        // console.log(newline);
+//         // const newline = "One day you finally knew\nwhat you had to do, and began,";
+//         // console.log(newline);
 
-        // /*
-        // One day you finally knew
-        // what you had to do, and began,
-        // */
-        /**
-         * 
-         * 
-         * 
-         *  * ===== Troubleshooting Exercise from Replit =====
- * The function below should log the number 2, however it does not, 
- * see if you can fix it!
- * Be sure to fix it in the spirit of the code, do not hard code the result.
- */
+//         // /*
+//         // One day you finally knew
+//         // what you had to do, and began,
+//         // */
+//         /**
+//          * 
+//          * 
+//          * 
+//          *  * ===== Troubleshooting Exercise from Replit =====
+//  * The function below should log the number 2, however it does not, 
+//  * see if you can fix it!
+//  * Be sure to fix it in the spirit of the code, do not hard code the result.
+//  */
 
-    function troubleshooting() {
-        const a = 1;
-        const b = 1;
+//     function troubleshooting() {
+//         const a = 1;
+//         const b = 1;
 
-        let result;
+//         let result;
 
-        // Edit between these lines
-        // =================================
-        // result = "a" + "b";
-        result = a + b; // my solution
-        // =================================
+//         // Edit between these lines
+//         // =================================
+//         // result = "a" + "b";
+//         result = a + b; // my solution
+//         // =================================
 
-        return result;
-    }
+//         return result;
+//     }
 
-    // Do not change this 
-    module.exports = troubleshooting;
+//     // Do not change this 
+//     module.exports = troubleshooting;
 
 
     // Exercise 2 from RePlit
@@ -249,17 +249,17 @@
      * Change this code so it returns `true` when the number is greater than or equal to 10, and false if it is less than 10
      */
 
-    number = Number(prompt("enter a number"));
+    // number = Number(prompt("enter a number"));
 
-    function numberChecker() {
-        // if(number === 6)
+    // function numberChecker() {
+    //     // if(number === 6)
 
-        if(number >= 10) {         
-            return true;
-        } else {
-            return false;
-        }
-    }
+    //     if(number >= 10) {         
+    //         return true;
+    //     } else {
+    //         return false;
+    //     }
+    // }
 
 
 
@@ -278,13 +278,13 @@
      * e = the sum of the previous four variables
      */
 
-    const a = "?"
-    const b = "?"
-    const c = "?"
-    const d = "?"
-    const e = "?"
+    // const a = "?"
+    // const b = "?"
+    // const c = "?"
+    // const d = "?"
+    // const e = "?"
 
-    module.exports = {a, b, c, d, e}
+    // module.exports = {a, b, c, d, e}
 
         /**
      * Lets do some math!
@@ -299,18 +299,33 @@
      * e = the sum of the previous four variables
      */
 
-    const a = 1 + 8;
-    const b = 22 * 3;
-    const c = 5 % 4;
-    const d = a - 17;
-    const e = a + b + c + d;
+    // const a = 1 + 8;
+    // const b = 22 * 3;
+    // const c = 5 % 4;
+    // const d = a - 17;
+    // const e = a + b + c + d;
 
-    module.exports = {a, b, c, d, e}
-
-
+    // module.exports = {a, b, c, d, e}
 
 
+    // Functions notes
 
+
+    function favoriteAnimal(animal) {
+    return animal + " is my favorite animal!"
+    }
+
+    console.log(favoriteAnimal('Goat'))
+
+// In JavaScript, parameters are the items listed between the parentheses () in the function declaration. Function arguments are the actual values we decide to pass to the function.
+// In the example above, the function definition is written on the first line: function favoriteAnimal(animal). The parameter, animal, is found inside the parentheses. We could just as easily replace animal with pet, x, or blah. But in this case, naming the parameter animal gives someone reading our code a bit of context so that they don’t have to guess what animal may eventually contain.
+// By putting animal inside the parentheses of the favoriteAnimal() function, we are telling JavaScript that we will send some value to our favoriteAnimal function. This means that animal is just a placeholder for some future value. But what value are we sending?
+// The last line, favoriteAnimal('Goat'), is where we are calling our favoriteAnimal function and passing the value 'Goat' inside that function. Here, 'Goat' is our argument. We are telling the favoriteAnimal function, “Please send 'Goat' to the favoriteAnimal function and use 'Goat' wherever the ‘animal’ placeholder is.” Because of the flexibility that using a parameter provides, we can declare any animal to be our favorite.
+
+
+//Function scope and conflicts
+//When you create a function, the variables and other things defined inside the function are inside their own separate scope, meaning that they are locked away in their own separate compartments, unreachable from code outside the functions.
+// JavaScript is set up like this for various reasons — but mainly because of security and organization. Sometimes you don't want variables to be accessible from everywhere in the code — external scripts that you call in from elsewhere could start to mess with your code and cause problems because they happen to be using the same variable names as other parts of the code, causing conflicts. This might be done maliciously, or just by accident.
 
 
 
