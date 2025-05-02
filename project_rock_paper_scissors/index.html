@@ -8,7 +8,26 @@
 <body>
     <h1>Rock Paper Scissorrs game with JS</h1>
     <script>
-        console.log("Hello World")
+
+    
+        function getComputerChoice(max){
+            const weaponsArray = ['paper', 'scissors', 'rock'];
+            const randomIndex = Math.floor(Math.random () * max);
+
+            return weaponsArray[randomIndex];
+        }
+        console.log(getComputerChoice(3));
+
+        function getHumanChoice(){
+            const weaponsArray = ['paper', 'scissors', 'rock'];
+            const gameChoice = prompt("Type your choice between paper, rock, scissors: ");
+            
+            return (" Your choices " + weaponsArray[gameChoice]);
+
+        }
+        console.log(getHumanChoice());
+        
+         
     </script>
     
 </body>
