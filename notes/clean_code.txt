@@ -1,0 +1,23 @@
+What is clean code?
+Consider the following examples:
+
+Example A:
+
+const x= function (z){
+   const w = "Hello ";
+return w +  z
+
+ }
+
+x("John");
+
+Example B:
+const generateUserGreeting = function (name) {
+  const greeting = "Hello ";
+  return greeting + name;
+};
+
+generateUserGreeting("John");
+
+Example B represents cleaner code. While you may not know what each part does, it’s much easier to guess what’s happening because the functions and variables are named clearly. 
+The indentation and spacing follow a consistent and logical pattern.
