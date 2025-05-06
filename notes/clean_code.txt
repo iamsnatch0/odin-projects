@@ -21,3 +21,88 @@ generateUserGreeting("John");
 
 Example B represents cleaner code. While you may not know what each part does, it’s much easier to guess what’s happening because the functions and variables are named clearly. 
 The indentation and spacing follow a consistent and logical pattern.
+
+
+Naming functions and variables
+Use consistent vocabulary
+Variables of the same type ideally follow a consistent naming system. Consider the following examples from a game:
+
+// Consistent naming
+function getPlayerScore();
+function getPlayerName();
+function getPlayerTag();
+They all follow the same naming system of “get a thing”. Now consider the following:
+
+// Inconsistent naming
+function getUserScore();
+function fetchPlayerName();
+function retrievePlayer1Tag();
+
+Variables should preferably begin with a noun or an adjective (that is, a noun phrase), as they typically represent “things”, 
+whether that thing is a string, a number etc. Functions represent actions so ideally begin with a verb.
+// Preferable
+const numberOfThings = 10;
+const myName = "Thor";
+const selected = true;
+
+// Not preferable (these start with verbs, could be confused for functions)
+const getCount = 10;
+const showNorseGods = ["Odin", "Thor", "Loki"];
+
+// Preferable
+function getCount() {
+  return numberOfThings;
+}
+
+// Not preferable (myName doesn't represent some kind of action)
+function myName() {
+  return "Thor";
+}
+
+
+Use searchable and immediately understandable names
+Sometimes, it can be tempting to use “magic values” i.e. explicit values, such as bare numbers or strings. 
+Let’s take another look at an example:
+
+setTimeout(stopTimer, 3600000);
+The problem is obvious. What does the magic number 3600000 mean, and how long is this timeout going to count down before 
+executing stopTimer? Even if you know that JavaScript understands time in milliseconds, you’d probably need a calculator or 
+Google to figure out how many seconds or minutes it represents.
+
+Now, let’s make this code more meaningful by introducing a descriptive variable:
+
+const ONE_HOUR = 3600000; // Can even write as 60 * 60 * 1000;
+
+setTimeout(stopTimer, ONE_HOUR);
+
+
+Line length
+Again, different style guides will recommend different options for this one, but just about all of them suggest 
+limiting the length of each line of code.
+
+Generally, your code will be easier to read if you manually break lines that are longer than about 80 characters. 
+Many code editors have a line in the display to show when you have crossed this threshold. When manually breaking lines, 
+you should try to break immediately after an operator or comma.
+
+Then, there are a few ways to format continuation lines. For example, you can:
+
+
+// This line is a bit too long
+let reallyReallyLongLine = something + somethingElse + anotherThing + howManyTacos + oneMoreReallyLongThing;
+
+// You could format it like this
+let reallyReallyLongLine =
+  something +
+  somethingElse +
+  anotherThing +
+  howManyTacos +
+  oneMoreReallyLongThing;
+
+// Or maybe like this
+let anotherReallyReallyLongLine = something + somethingElse + anotherThing +
+                                  howManyTacos + oneMoreReallyLongThing;
+
+
+
+
+
