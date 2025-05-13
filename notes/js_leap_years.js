@@ -16,7 +16,15 @@
 // ## Hints
 // - use an `if` statement and `&&` to make sure all the conditions are met properly
 
-const leapYears = function() {
+const leapYears = function(leapInput) {
+    let checkeLeap;
+    if (((leapInput % 4 === 0) && (leapInput % 100 !== 0)) || (leapInput % 400 === 0)) {
+        checkeLeap = true; 
+    } else {
+        checkeLeap = false;
+    }
 
+    return checkeLeap;
+        
 };
 
