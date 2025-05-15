@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple DOM example</title>
+   
+  </head>
+  
+  <body>
+      <section>
+        <img src="dinosaur.png" alt="A red Tyrannosaurus Rex: A two legged dinosaur standing upright like a human, with small arms, and a large head with lots of sharp teeth.">
+        <p>Here we will add a link to the <a href="https://www.mozilla.org/">Mozilla homepage</a></p>
+      </section>
+
+
+      <script>
+        const link = document.querySelector("a"); // To manipulate an element inside the DOM, you first need to select it and store a reference to it inside a variable.
+        link.textContent = "Mozilla Developer Network"; // change the text inside the link by updating the value of the Node.textContent property.
+        link.href = "https://developer.mozilla.org"; // change the URL the link is pointing to
+
+        const sect = document.querySelector("section"); // let's start by grabbing a reference to our <section> 
+        const para = document.createElement("p"); // create a new paragraph using Document.createElement()
+        para.textContent = "We hope you enjoyed the ride."; // give it some text content
+        sect.appendChild(para); // append the new paragraph at the end of the section using Node.appendChild():
+
+        const text = document.createTextNode(
+            " — the premier source for web development knowledge.",
+        ); //  add a text node to the paragraph the link sits inside, to round off the sentence 
+        const linkPara = document.querySelector("p");
+        linkPara.appendChild(text); //  grab a reference to the paragraph the link is inside, and append the text node to it
+
+        sect.appendChild(linkPara); // If we wanted to move the paragraph with the link inside it to the bottom of the section
+
+        sect.removeChild(linkPara); // Removing a node, Node.removeChild()
+        linkPara.parentNode.removeChild(linkPara); //When you want to remove a node based only on a reference to itself
+
+
+
+ 
+
+
+
+
+      
+      </script>
+  </body>
+</html>
