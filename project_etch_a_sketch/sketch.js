@@ -1,9 +1,12 @@
+// Create the divs using JavaScript. Don’t try to create them by hand by 
+// copying and pasting them in your HTML file!
+const body = document.querySelector("body");
+
+const newDiv = document.createElement("div");
+newDiv.style.height = "500px";
+newDiv.style.borderStyle = "solid";
+newDiv.getAttribute("id");
 
 
-const cdiv = document.querySelector(".container");
 
-// Add 16 div
-for (let i = 1; i < 257; i++) {
-    const div = document.createElement("div");
-    cdiv.appendChild(div);
-}
+
