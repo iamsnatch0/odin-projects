@@ -1,4 +1,4 @@
-/* #container {
+#container {
     height: 500px;
     
     border-style: dotted;
@@ -14,10 +14,10 @@
 }
 .changes div{
     background: peachpuff;
-    border: 4px solid brown;
+    border: 2px solid brown;
     height: 20px;
     flex: 1;
-} */
+}
 
 h1{
     text-align: center;
