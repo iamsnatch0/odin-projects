@@ -1,5 +1,5 @@
 
-<p style="text-align: center"><img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*P_wUre75IHZUQYFjoD7GZA.png" alt="odin-project-logo" width="280"/></p>
+<p><img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*P_wUre75IHZUQYFjoD7GZA.png" alt="odin-project-logo" width="280"/></p>
 
 This folder stores the projects that were completed as part of the [**Foundations**](https://www.theodinproject.com/paths/foundations/courses/foundations) section of [**The Odin Project**](https://www.theodinproject.com/)'s curriculum.
 
@@ -34,7 +34,7 @@ This folder stores the projects that were completed as part of the [**Foundation
 | **Recipe Site**         | Command Line Basics, Git Basics, Basic HTML   | [Code](https://github.com/iamsnatch0/odin-projects/blob/main/odin-recipes/index.html)                               | [Demo](https://iamsnatch0.github.io/odin-projects/odin-recipes/)    | ⭐                         |
 | **Landing Page**        | CSS Cascade, CSS Flexbox                      | [Code](https://github.com/iamsnatch0/odin-projects/tree/main/project-landing-page)                                  | [Demo](https://iamsnatch0.github.io/odin-projects/project-landing-page/)           |⭐                 |
 | **Rock Paper Scissors** | JS Basics: Types, Functions and Conditionals  | [Code](https://github.com/iamsnatch0/odin-projects/tree/main/project_rock_paper_scissors)           | [Demo](https://iamsnatch0.github.io/odin-projects/project_rock_paper_scissors/)           |⭐⭐    |
-| **Etch-a-Sketch**       | JS Basics: Arrays, Loops and DOM Manipulation | [Code](https://github.com/iamsnatch0/odin-projects/tree/main/project_etch_a_sketch)           | [Demo](https://iamsnatch0.github.io/odin-projects/project_etch_a_sketch/)           |⭐⭐⭐ (Not Graded Yet!)    |
+| **Etch-a-Sketch**       | JS Basics: Arrays, Loops and DOM Manipulation | [Code](https://github.com/iamsnatch0/odin-projects/tree/main/project_etch_a_sketch)           | [Demo](https://iamsnatch0.github.io/odin-projects/project_etch_a_sketch/)           |⭐⭐⭐     |
 | **Calculator**          | JS Basics: Objects                            | [Code](Not Completed Yet!)           | [Demo](Not Completed Yet!)           |⭐⭐⭐ (Not Graded Yet!)    |
 
 ---
