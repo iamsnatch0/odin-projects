@@ -1,6 +1,3 @@
-
-
-
 console.log("Welcome To The Rock Paper Scissors Game");
 console.log("-----------------------------------------");
 
