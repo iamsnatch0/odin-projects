@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dom Revision</title>
+</head>
+<body>
+
+<div id="container">
+<div class="display"></div>
+<div class="controls"></div>
+</div>
+
+<script>
+  // selects the #container div (don't worry about the syntax, we'll get there)
+const container = document.querySelector("#container");
+
+// selects the first child of #container => .display
+const display = container.firstElementChild;
+console.log(display);  // <div class="display"></div>
+
+
+// selects the .controls div
+const controls = document.querySelector(".controls");
+
+// selects the prior sibling => .display
+// const display = controls.previousElementSibling;
+console.log(display); // <div class="display"></div>
+
+// creates a new div referenced in the variable 'div'
+const div = document.createElement("div");
+
+
+// adds the indicated style rule to the element in the div variable
+div.style.color = "blue";
+
+// adds several style rules
+div.style.cssText = "color: blue; background: white;";
+
+// adds several style rules
+div.setAttribute("style", "color: blue; background: white;");
+// dot notation with kebab case: doesn't work as it attempts to subtract color from div.style.background
+// equivalent to: div.style.background - color
+div.style.background-color;
+
+// dot notation with camelCase: works, accesses the div's background-color style
+div.style.backgroundColor;
+
+// bracket notation with kebab-case: also works
+div.style["background-color"];
+
+// bracket notation with camelCase: also works
+div.style["backgroundColor"];
+
+// if id exists, update it to 'theDiv', else create an id with value "theDiv"
+div.setAttribute("id", "theDiv");
+
+// returns value of specified attribute, in this case "theDiv"
+div.getAttribute("id");
+
+// removes specified attribute
+div.removeAttribute("id");
+
+// adds class "new" to your new div
+div.classList.add("new");
+
+// removes "new" class from div
+div.classList.remove("new");
+
+// if div doesn't have class "active" then add it, or if it does, then remove it
+div.classList.toggle("active");
+
+// creates a text node containing "Hello World!" and inserts it in div
+div.textContent = "Hello World!";
+
+// renders the HTML inside div
+div.innerHTML = "<span>Hello World!</span>";
+
+// There are three primary ways to go about this:
+
+// You can specify function attributes directly on your HTML elements.
+// You can set properties in the form of on<eventType>, such as onclick or onmousedown, on the DOM nodes in your JavaScript.
+// You can attach event listeners to the DOM nodes in your JavaScript.
+
+// method 1
+// <button onclick="alert('Hello World')">Click Me</button>
+
+// Method 2
+
+<button id="btn">Click Me</button>
+// the JavaScript file
+const btn = document.querySelector("#btn");
+btn.onclick = () => alert("Hello World");
+
+
+
+
+
+
+
+
+</script>
+
+  
+</body>
+</html>
+
