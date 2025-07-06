@@ -93,6 +93,16 @@ div.innerHTML = "<span>Hello World!</span>";
 // the JavaScript file
 const btn = document.querySelector("#btn");
 btn.onclick = () => alert("Hello World");
+// Method 3
+<!-- the HTML file -->
+<button id="btn">Click Me Too</button>
+// the JavaScript file
+const btn = document.querySelector("#btn");
+btn.addEventListener("click", () => {
+  alert("Hello World");
+});
+
+
 
 
 
