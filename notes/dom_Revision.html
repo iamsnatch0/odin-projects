@@ -11,6 +11,8 @@
 <div id="container">
 <div class="display"></div>
 <div class="controls"></div>
+
+<input type="text" id="message">
 </div>
 
 <script>
@@ -100,6 +102,22 @@ btn.onclick = () => alert("Hello World");
 const btn = document.querySelector("#btn");
 btn.addEventListener("click", () => {
   alert("Hello World");
+});
+
+//  register keyboard event listeners:
+// If you press a character key, all three event handlers will be called.
+let msg = document.getElementById('#message');
+
+msg.addEventListener("keydown", (event) => {
+    // handle keydown
+});
+
+msg.addEventListener("keypress", (event) => {
+    // handle keypress
+});
+
+msg.addEventListener("keyup", (event) => {
+    // handle keyup
 });
 
 </script>
