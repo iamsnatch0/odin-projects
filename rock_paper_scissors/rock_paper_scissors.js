@@ -61,15 +61,6 @@ function playGame() {
         console.log(`${winner} computer ${computerScore} You ${humanScore}`)
 
         }
-
-    
-    
-    
-        
-        
-        
-    
-
 console.log(playGame());
 // console.log(computerScore);
 // console.log(humanScore);
