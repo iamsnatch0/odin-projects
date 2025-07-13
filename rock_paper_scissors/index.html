@@ -5,40 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Rock Paper Scissor</title>
-    <script src="../../odin-projects/rock_paper_scissors/rock_paper_scissors.js"></script>
+    <script src="../../odin-projects/rock_paper_scissors/rps.js"></script>
 </head>
 <body>
     <h1>Rock Paper Scissors</h1>
-    <div class="score">
-        <div class="ties">Ties: 0</div>
-    </div>
-    <div class="winDiv">
-        <h1 class="winner"></h1>
-        <button class="reset" onclick="resetGame()">Play Again ?</button>
-    </div>
-
-    <div class="playerSelection">
-        <h3 class="humanChoice"></h3>
-        <h3 class="humanScore">Score: 0</h3>
-        <div class="playerImgs">
-            <img src="./img/rock.png" alt="rock" class="pImg" id="rock">
-            <img src="./img/paper.png" alt="paper" class="pImg" id="paper">
-            <img src="./img/scissors.png" alt="scissors" class="pImg" id="scissors">
-
-        </div>
-    </div>
-        <div class="computerSelection">
-        <h3 class="computerChoice"></h3>
-        <h3 class="computerScore">Score: 0</h3>
-        <div class="computerImgs">
-            <img src="./img/rock.png" alt="rock" class="rock">
-            <img src="./img/paper.png" alt="paper" class="paper">
-            <img src="./img/scissors.png" alt="scissors" class="scissors">
-
-        </div>
-    </div>
-    
-
-    
+    <button id="rockBtn" class="button">
+        <img src="/rock_paper_scissors/img/rock.png" alt="rock"> 
+    </button>
+    <button id="paperBtn" class="button">
+        <img src="/rock_paper_scissors/img/paper.png" alt="paper">
+    </button>
+    <button id="scissorsBtn" class="button">
+        <img src="/rock_paper_scissors/img/scissors.png" alt="scissors">
+    </button>
+    <h3>Results</h3>
+    <div id="hScore">Human score: 0</div>
+    <div id="cScore">Computer score: 0</div>
+    <h3>Game Message</h3>
+    <div id="resultMsg"></div>
 </body>
 </html>
