@@ -1,3 +1,35 @@
+const cal0 = document.getElementById("0"); 
+const cal1 = document.getElementById("1"); 
+const cal2 = document.getElementById("2");
+const cal3 = document.getElementById("3");
+const cal4 = document.getElementById("4");
+const cal5 = document.getElementById("5"); 
+const cal6 = document.getElementById("6");
+const cal7 = document.getElementById("7");
+const cal8 = document.getElementById("8");
+const cal9 = document.getElementById("9"); 
+const calPlus = document.getElementById("+");
+const calMinus = document.getElementById("-");
+const calTimes = document.getElementById("x");
+const calDivi = document.getElementById("/");
+const calDot = document.getElementById(".");
+const calClear = document.getElementById("c");
+const calEqual = document.getElementById("=");
+
+const disp = document.getElementById("display");
+
+// 5) Create the functions that populate the display when you click the digit buttons. 
+// You should store the content of the display (the number) in a variable for use in the next step.
+
+cal1.addEventListener('click', popDisplay)
+
+function popDisplay(){
+  // I AM HERE
+}
+  
+
+
+
 // Here are some use cases (expectations about your project):
 
 // 1) Your calculator is going to contain functions for all of the basic math operators you typically find on calculators, 
