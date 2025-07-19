@@ -43,10 +43,10 @@
     
 }
 .display{
-    background-color: rgb(190, 190, 155);
+    background-color: rgb(134, 134, 114);
     height: 100px;
     color: white;
-    font-size: 30px;
+    font-size: 50px;
     font-weight: bold;
     display: flex;
     justify-content: right;
