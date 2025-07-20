@@ -1,33 +1,38 @@
-const cal0 = document.getElementById("0"); 
-const cal1 = document.getElementById("1"); 
-const cal2 = document.getElementById("2");
-const cal3 = document.getElementById("3");
-const cal4 = document.getElementById("4");
-const cal5 = document.getElementById("5"); 
-const cal6 = document.getElementById("6");
-const cal7 = document.getElementById("7");
-const cal8 = document.getElementById("8");
-const cal9 = document.getElementById("9"); 
-const calPlus = document.getElementById("+");
-const calMinus = document.getElementById("-");
-const calTimes = document.getElementById("x");
-const calDivi = document.getElementById("/");
-const calDot = document.getElementById(".");
-const calClear = document.getElementById("c");
-const calEqual = document.getElementById("=");
-
+const cal0 = document.getElementById("zero"); 
+const cal1 = document.getElementById("one"); 
+const cal2 = document.getElementById("two");
+const cal3 = document.getElementById("three");
+const cal4 = document.getElementById("four");
+const cal5 = document.getElementById("five"); 
+const cal6 = document.getElementById("six");
+const cal7 = document.getElementById("seven");
+const cal8 = document.getElementById("eight");
+const cal9 = document.getElementById("nine"); 
+const calPlus = document.getElementById("Sadd");
+const calMinus = document.getElementById("Sminus");
+const calTimes = document.getElementById("Smulti");
+const calDivi = document.getElementById("Sdivide");
+const calDot = document.getElementById("Sdot");
+const calClear = document.getElementById("Sclear");
+const calEqual = document.getElementById("Sequal");
 const disp = document.getElementById("display");
 
 // 5) Create the functions that populate the display when you click the digit buttons. 
 // You should store the content of the display (the number) in a variable for use in the next step.
 
-cal1.addEventListener('click', popDisplay)
+let dispValue = "";
 
-function popDisplay(){
-  // I AM HERE
+cal1.addEventListener("click", popDisplay);
+function popDisplay() {
+  dispValue = cal1.innerText;
+  disp.innerText = dispValue 
 }
-  
 
+// calDivi.addEventListener("click", popDisplay);
+// function popDisplay() {
+//   dispValue = calDivi.innerText;
+//   disp.innerText = dispValue 
+// }
 
 
 // Here are some use cases (expectations about your project):
