@@ -33,15 +33,7 @@
     flex: 1;
     
 }
-.column2{
-    background-color: rgb(22, 53, 53);
-    color: white;
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    flex: 1;
-    
-}
+
 .display{
     background-color: rgb(134, 134, 114);
     height: 100px;
@@ -52,18 +44,14 @@
     justify-content: right;
     align-items: end;
 }
-.column2:hover {
-    
-    opacity: 0.3;
-   
-}
+
 .column1:hover{
     
     opacity: 0.3;
     
 }
 .column:hover{
-  
+
    opacity: 0.3;
    
 }
