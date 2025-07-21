@@ -1,20 +1,5 @@
-const cal0 = document.getElementById("zero"); 
-const cal1 = document.getElementById("one"); 
-const cal2 = document.getElementById("two");
-const cal3 = document.getElementById("three");
-const cal4 = document.getElementById("four");
-const cal5 = document.getElementById("five"); 
-const cal6 = document.getElementById("six");
-const cal7 = document.getElementById("seven");
-const cal8 = document.getElementById("eight");
-const cal9 = document.getElementById("nine"); 
-const calPlus = document.getElementById("Sadd");
-const calMinus = document.getElementById("Sminus");
-const calTimes = document.getElementById("Smulti");
-const calDivi = document.getElementById("Sdivide");
-const calDot = document.getElementById("Sdot");
-const calClear = document.getElementById("Sclear");
-const calEqual = document.getElementById("Sequal");
+
+const calButtons = document.querySelectorAll(".calButton");
 const disp = document.getElementById("display");
 
 // 5) Create the functions that populate the display when you click the digit buttons. 
@@ -22,18 +7,12 @@ const disp = document.getElementById("display");
 
 let dispValue = "";
 
-cal1.addEventListener("click", popDisplay);
-function popDisplay() {
-  dispValue = cal1.innerText;
-  disp.innerText = dispValue 
-}
-
-// calDivi.addEventListener("click", popDisplay);
-// function popDisplay() {
-//   dispValue = calDivi.innerText;
-//   disp.innerText = dispValue 
-// }
-
+calButtons.forEach(button => {
+  button.addEventListener("click", function () {
+    dispValue += this.innerText;
+    disp.innerText = dispValue;
+  });
+});
 
 // Here are some use cases (expectations about your project):
 
