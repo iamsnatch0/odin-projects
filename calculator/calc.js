@@ -7,11 +7,20 @@ const disp = document.getElementById("display");
 
 let dispValue = "";
 
+// calButtons.forEach(button => {
+//   button.addEventListener("click", function () {
+//     dispValue += this.innerText;
+//     disp.innerText = dispValue;
+//   });
+// });
+
+function handleButtonClick() {
+  dispValue += this.innerText;
+  disp.innerText = dispValue;
+}
+
 calButtons.forEach(button => {
-  button.addEventListener("click", function () {
-    dispValue += this.innerText;
-    disp.innerText = dispValue;
-  });
+  button.addEventListener("click", handleButtonClick);
 });
 
 // Here are some use cases (expectations about your project):
