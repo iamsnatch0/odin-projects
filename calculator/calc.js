@@ -79,11 +79,18 @@ function operate(operator, currentValue, previousValue) {
 
 let firstNumber = "";
 let secondNumber = "";
+let isSecondNumber = false; 
 
 function storeNumbers() {
-  firstNumber += this.innerText;
-  secondNumber  += this.innerText;
+  if (!isSecondNumber) {
+    firstNumber += this.innerText;
+  } else {
+    secondNumber += this.innerText;
+  }
+
+  console.log("[storeNumbers] firstNumber: " + firstNumber + ", secondNumber: " + secondNumber);
 }
+
 calButtons.forEach(button => {
   button.addEventListener("click", storeNumbers);
 });
