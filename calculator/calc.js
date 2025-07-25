@@ -57,43 +57,96 @@ let operator = ''; // '+', '-', '*', '/'
 let previousValue = '';
 
 // 3) Create a new function operate that takes an operator and two numbers and then calls one of the above functions on the numbers.
-function operate(operator, currentValue, previousValue) {
+
+function operate(operator, previousValue, currentValue) {
+  const num1 = Number(previousValue);
+  const num2 = Number(currentValue);
+
   if (operator === '+') {
-    return add(currentValue,previousValue);
+    return add(num1, num2);
   } else if (operator === '-') {
-    return subtract(currentValue,previousValue);
+    return subtract(num1, num2);
   } else if (operator === '*') {
-    return multiply(currentValue,previousValue);
+    return multiply(num1, num2);
   } else if (operator === '/') {
-    return divide(currentValue,previousValue);
+    return divide(num1, num2);
   } else {
-    return ("Error");
+    return "Error";
   }
 }
 
-// 6) Make the calculator work! You’ll need to store the first and second numbers input by the user and then operate() on them when the user presses the = button, 
+
+// 6 Make the calculator work! You’ll need to store the first and second numbers input by the user and then operate() on them when the user presses the = button, 
 // according to the operator that was selected between the numbers.
 // You should already have the code that can populate the display, so once operate has been called, update the display with the result of the operation.
 // This is the hardest part of the project. You need to figure out how to store all the values and call the operate function with them. Don’t feel bad if 
 // it takes you a while to figure out the logic.
 
-let firstNumber = "";
-let secondNumber = "";
-let isSecondNumber = false; 
+let resultDisplayed = false;
 
-function storeNumbers() {
-  if (!isSecondNumber) {
-    firstNumber += this.innerText;
+function handleButtonClick() {
+  const value = this.innerText;
+
+  if (value === 'C') {
+    currentValue = '';
+    previousValue = '';
+    operator = '';
+    disp.innerText = '';
+    console.clear();
+    console.log("The Values have been cleared. ");
+    return;
+  }
+  
+  if (value === '+' || value === '-' || value === 'x' || value === '/') {
+  if (currentValue === '') {
+    console.log("Enter a number first before choosing an operator.");
+    return;
+  }
+  previousValue = currentValue;
+  if (value === 'x') {
+    operator = '*';
   } else {
-    secondNumber += this.innerText;
+    operator = value;
   }
 
-  console.log("[storeNumbers] firstNumber: " + firstNumber + ", secondNumber: " + secondNumber);
+  currentValue = '';
+  disp.innerText = '';
+
+  console.log("Operator selected:", operator);
+  console.log("First number saved as previousValue:", previousValue);
+
+  return;
 }
 
+if (value === '=') {
+  if (currentValue === '' || previousValue === '' || operator === '') {
+    console.log("Incomplete operation");
+    return;
+  }
+  const result = operate(operator, previousValue, currentValue);
+  disp.innerText = result;
+  console.log(`Calculation: ${previousValue} ${operator} ${currentValue} = ${result}`);
+ 
+  currentValue = String(result);
+  previousValue = '';
+  operator = '';
+  resultDisplayed = true;
+  return;
+}
+
+
+if (resultDisplayed) {
+  currentValue = '';
+  resultDisplayed = false;
+  disp.innerText = '';
+}
+
+currentValue += value;
+disp.innerText = currentValue;
+console.log(`Current input: ${currentValue}`);
+}
+
+
 calButtons.forEach(button => {
-  button.addEventListener("click", storeNumbers);
+button.addEventListener("click", handleButtonClick);
 });
-
-
-
