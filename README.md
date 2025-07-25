@@ -35,7 +35,7 @@ This folder stores the projects that were completed as part of the [**Foundation
 | **Landing Page**        | CSS Cascade, CSS Flexbox                      | [Code](https://github.com/iamsnatch0/odin-projects/tree/main/project-landing-page)                                  | [Demo](https://iamsnatch0.github.io/odin-projects/project-landing-page/)           |⭐                 |
 | **Rock Paper Scissors** | JS Basics: Types, Functions and Conditionals  | [Code](https://github.com/iamsnatch0/odin-projects/tree/main/rock_paper_scissors)           | [Demo]()           |⭐⭐    |
 | **Etch-a-Sketch**       | JS Basics: Arrays, Loops and DOM Manipulation | [Code](https://github.com/iamsnatch0/odin-projects/tree/main/project_etch_a_sketch)           | [Demo](https://iamsnatch0.github.io/odin-projects/project_etch_a_sketch/)           |⭐⭐⭐     |
-| **Calculator**          | JS Basics: Objects                            | [Code](https://github.com/iamsnatch0/odin-projects/tree/main/calculator)           | [Demo](Not Completed Yet!)           |⭐⭐⭐ (Not Graded Yet!)    |
+| **Calculator**          | JS Basics: Objects                            | [Code](https://github.com/iamsnatch0/odin-projects/tree/main/calculator)           | [Demo](Not Completed Yet!)           |⭐⭐⭐ (https://iamsnatch0.github.io/odin-projects/calculator/)    |
 
 ---
 
