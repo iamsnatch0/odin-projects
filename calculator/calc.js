@@ -7,13 +7,6 @@ const disp = document.getElementById("display");
 
 let dispValue = "";
 
-// calButtons.forEach(button => {
-//   button.addEventListener("click", function () {
-//     dispValue += this.innerText;
-//     disp.innerText = dispValue;
-//   });
-// });
-
 function handleButtonClick() {
   dispValue += this.innerText;
   disp.innerText = dispValue;
@@ -92,31 +85,71 @@ function handleButtonClick() {
     previousValue = '';
     operator = '';
     disp.innerText = '';
-    console.clear();
     console.log("The Values have been cleared. ");
     return;
   }
   
-  if (value === '+' || value === '-' || value === 'x' || value === '/') {
-  if (currentValue === '') {
+//   if (value === '+' || value === '-' || value === 'x' || value === '/') {
+//   if (currentValue === '') {
+//     console.log("Enter a number first before choosing an operator.");
+//     return;
+//   }
+//   previousValue = currentValue;
+//   if (value === 'x') {
+//     operator = '*';
+//   } else {
+//     operator = value;
+//   }
+
+//   currentValue = '';
+//   disp.innerText = '';
+
+//   console.log("Operator selected:", operator);
+//   console.log("First number saved as previousValue:", previousValue);
+
+//   return;
+// }
+
+
+// 7) Gotchas: watch out for and fix these bugs if they show up in your code:
+// Your calculator should not evaluate more than a single pair of numbers at a time. For example, this is how your calculator should function:
+// Enter a number (12).
+// Enter an operator (+).
+// Enter a second number (7).
+// Enter a second operator (-). At this point, it should evaluate the initial pair of numbers (12 + 7), then display the result (19).
+// Enter another number (1).
+// Enter another operator or equals sign (=). At this point, it should use the previous result (19) as the first number, the operator (-), and 
+// the new number (1) to calculate the new equation 19 - 1. 
+// You should see the result (18) on the display.
+
+ if (value === '+' || value === '-' || value === 'x' || value === '/') {
+  if (currentValue === '' && previousValue === '') {
     console.log("Enter a number first before choosing an operator.");
     return;
   }
-  previousValue = currentValue;
-  if (value === 'x') {
-    operator = '*';
-  } else {
-    operator = value;
+
+  if (previousValue !== '' && currentValue !== '') {
+    const result = operate(operator, previousValue, currentValue);
+    disp.innerText = result;
+    console.log(`Evaluated: ${previousValue} ${operator} ${currentValue} = ${result}`);
+    previousValue = String(result);
+    currentValue = '';
+  } else if (currentValue !== '') {
+    previousValue = currentValue;
+    currentValue = '';
   }
 
-  currentValue = '';
-  disp.innerText = '';
+  if (value === 'x') {
+  operator = '*';
+} else {
+  operator = value;
+}
 
-  console.log("Operator selected:", operator);
-  console.log("First number saved as previousValue:", previousValue);
-
+  console.log(`Operator selected: ${operator}`);
+  console.log(`Stored previousValue: ${previousValue}`);
   return;
 }
+
 
 if (value === '=') {
   if (currentValue === '' || previousValue === '' || operator === '') {
