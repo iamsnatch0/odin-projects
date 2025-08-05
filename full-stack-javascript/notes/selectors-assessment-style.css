@@ -8,7 +8,7 @@ To complete the task:
 Make the <h1> headings blue.
 Give <h2> headings a blue background and white text.
 Cause text wrapped in a <span> to have a font-size of 200%. */
-h1 {
+/* h1 {
     color: blue;
 }
 
@@ -19,4 +19,30 @@ h2 {
 
 .size-span{
     font-size: 200%;
+} */
+
+
+/* Task 2
+Task 2
+To complete the task:
+
+Give the element with an id of special a yellow background.
+Give the element with a class of alert a 2px solid grey border.
+If the element with a class of alert also has a class of stop, make the background red.
+If the element with a class of alert also has a class of go, make the background green. */
+
+
+#special{
+    background-color: yellow;
+}
+
+.alert{
+    border: 2px solid grey; 
+}
+
+.alert.stop{
+    background-color: red;
+}
+.alert.go{
+    background-color: green;
 }
