@@ -1,37 +1,160 @@
+* {
+box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f4f8;
-    margin: 0;
-    padding: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+margin: 0;
+font-family: Arial, sans-serif;
+min-height: 100vh;
+display: flex;
+}
+
+.container {
+display: flex;
+flex-direction: row;
+width: 100%;
+}
+
+.logo-side {
+flex: 1;
+background-image: url('/odin-projects/full-stack-javascript/01_sign_up_form/img/world_cup.jpg'); 
+background-size: cover;
+background-position: center;
+position: relative;
+}
+
+.logo-overlay {
+background-color: rgba(0, 0, 0, 0.5);
+color: white;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 20px;
+text-align: center;
+}
+
+.form-side {
+flex: 1;
+background-color: #f0f4f8;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 40px;
 }
 
 form {
-    background-color: #fff;
-    padding: 30px 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
+background-color: #fff;
+padding: 30px 40px;
+border-radius: 8px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+max-width: 400px;
+width: 100%;
+}
+
+h1 {
+font-size: 48px;
+margin: 0;
 }
 
 h2 {
-    text-align: center;
-    color: #333;
+text-align: center;
+color: #333;
+margin-bottom: 20px;
 }
 
 label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: #333;
+display: block;
+margin-bottom: 8px;
+font-weight: bold;
+color: #333;
+}
+
+.input {
+border: 1px solid #E5E7EB;
+padding: 10px;
+border-radius: 4px;
+width: 100%;
+margin-bottom: 16px;
+transition: all 0.2s ease-in-out;
+}
+
+.input:focus {
+border-color: #3b82f6;
+box-shadow: 0 0 3px #3b82f6;
+outline: none;
+}
+
+.password:invalid {
+border-color: red;
+}
+
+.submit-btn {
+background-color: #596D48;
+color: white;
+border: none;
+padding: 12px 20px;
+border-radius: 5px;
+font-weight: bold;
+cursor: pointer;
+width: 100%;
+margin-top: 10px;
+transition: background-color 0.2s ease-in-out;
+}
+
+.submit-btn:hover {
+background-color: #4e5e3f;
 }
 
 p {
-    margin-bottom: 10px;
-    color: #444;
+margin-bottom: 10px;
+color: #e4e4e4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+.container {
+flex-direction: column;
+}
+
+.logo-side {
+height: 200px;
+}
+
+.logo-overlay {
+padding: 40px 20px;
+}
+
+.form-side {
+padding: 20px;
+}
+
+h1 {
+font-size: 36px;
+}
+
+form {
+padding: 20px;
+}
+}
+
+@media (max-width: 480px) {
+.logo-overlay {
+font-size: 14px;
+}
+
+h1 {
+font-size: 28px;
+}
+
+h2 {
+font-size: 20px;
+}
+
+.submit-btn {
+padding: 10px;
+font-size: 16px;
+}
 }
 
