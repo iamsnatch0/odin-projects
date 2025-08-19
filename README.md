@@ -67,7 +67,7 @@ This folder stores the projects that were completed as part of the [**Foundation
 
 | Project                      | Topic(s)                              | Repository                                                                                                     | Preview                                                                                         | Rating |
 | ---------------------------- | ------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ------ |
-| **Sign-up Form**             | Forms                                 | [Code](https://github.com/iamsnatch0/odin-projects/tree/main/full-stack-javascript/01_sign_up_form)         | [Demo](https://iamsnatch0.github.io/odin-projects/full-stack-javascript/01_sign_up_form/index.html)         | -      |
+| **Sign-up Form**             | Forms                                 | [Code](https://github.com/iamsnatch0/odin-projects/tree/main/full-stack-javascript/01_sign_up_form)         | [Demo](https://iamsnatch0.github.io/odin-projects/full-stack-javascript/01_sign_up_form/index.html)         | ⭐⭐     |
 | **Admin Dashboard**          | CSS Grid                              | [Code]()         | [Demo]()         | ⭐⭐   |
 | **Library**                  | Objects and Object constructors, OOP  | [Code]()         | [Demo]()         | -      |
 | **Tic Tac Toe**              | Factory functions and module patterns | [Code]()         | [Demo]()         | -      |
