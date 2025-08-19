@@ -19,4 +19,6 @@ if (!document.querySelector('.submit-message')) {
 message.classList.add('submit-message');
 document.querySelector('.form-side').appendChild(message);
 }
+
+e.target.reset();
 });
