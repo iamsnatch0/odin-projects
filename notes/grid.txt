@@ -1,0 +1,29 @@
+The properties grid-template-columns and grid-template-rows make defining column and row tracks easy. For this lesson, we’ll stick to defining our columns and rows using pixels. In the upcoming lessons, you’ll learn more about defining with percentages and fractional units too.
+
+Going back to our grid container from above, let’s define two columns and two rows to place our four grid items:
+
+.container {
+  display: grid;
+  grid-template-columns: 50px 50px;
+  grid-template-rows: 50px 50px;
+}
+
+If we want to add more columns or rows to our grid, we can define these values to make another track. Let’s say we wanted to add a third column to our example:
+
+.container {
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+  grid-template-rows: 50px 50px;
+}
+
+CSS Grid also includes a shorthand property for defining rows and columns. In our previous example we can replace the properties for grid-template-rows and grid-template-columns with the shorthand grid-template property. Here we can define our rows and columns all at once. For this property, rows are defined before the slash and columns are defined after the slash. 
+Let’s keep the same column and row values, but use the shorthand property instead:
+
+/* styles.css */
+
+.container {
+  display: grid;
+  grid-template: 50px 50px / 50px 50px 50px;
+}
+
+
