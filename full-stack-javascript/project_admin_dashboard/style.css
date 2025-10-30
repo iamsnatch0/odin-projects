@@ -26,9 +26,9 @@ a{
 }
 
 .side-bar h3{
-    padding: 6px 8px 6px 16px;
-    font-size: 25px;
-    color: #fcf9f9;  
+  padding: 6px 8px 6px 16px;
+  font-size: 25px;
+  color: #fcf9f9;  
 }
 
 .side-bar a img {
@@ -45,3 +45,119 @@ a{
   margin-right: 12px; 
 }
 
+
+.header {
+  margin-left: 15%; 
+  padding: 20px 40px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  max-width: 60%;
+}
+
+.search-section input {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: none;
+  background-color: #e8eef4;
+  font-size: 16px;
+}
+
+.search-section .icon {
+  width: 20px;
+  height: 20px;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-section .icon {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.profile-section .profile-p {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: gold;
+  padding: 4px;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+
+.bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.greeting {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.greeting .large {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: gold;
+  padding: 4px;
+}
+
+.greeting p {
+  margin: 0;
+  font-size: 14px;
+  color: #444;
+}
+
+.greeting h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #000;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.buttons button {
+  background-color: rgb(45, 155, 192);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: rgb(35, 130, 160);
+}
