@@ -187,6 +187,29 @@ a{
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.card-icons img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.card-icons img:hover {
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 .card h4 {
@@ -222,3 +245,6 @@ a{
   margin-bottom: 10px;
   font-size: 15px;
 }
+
+
+
