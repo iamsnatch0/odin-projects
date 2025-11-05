@@ -241,9 +241,18 @@ a{
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+
 .trend-item {
-  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
   font-size: 15px;
+}
+
+.trend-item img {
+  width: 35px;   /* make image smaller */
+  height: 35px;
+  margin-right: 10px; /* spacing between img and text */
 }
 
 
